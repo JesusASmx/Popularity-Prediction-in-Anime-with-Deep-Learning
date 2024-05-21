@@ -1,0 +1,2 @@
+,Mean Absolute Error,Mean Squared Error,R2 score,Spearman,Pearson,Kendall-Tau
+0,0.08392067813289257,0.011610823708798892,0.10582508953229175,"SignificanceResult(statistic=0.33849024590944565, pvalue=6.601069382671115e-40)","PearsonRResult(statistic=0.327913248898117, pvalue=2.0297484222061547e-37)","SignificanceResult(statistic=0.2299849849821918, pvalue=1.3122318423593574e-38)"
