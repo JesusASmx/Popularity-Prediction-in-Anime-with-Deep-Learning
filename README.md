@@ -47,14 +47,58 @@ And finally:
 >>> source anime_virtual_enviroment/bin/activate
 ```
 
+We personally created the virtual enviroment in our equivalent of ```./YourFolder```, so we encourage to follow the same practice.
   </li>
   <li>
+
+Inside ```anime_virtual_enviroment```, install the follow packages:
     
+```python
+>>> pip install pandas 
+>>> pip install numpy 
+>>> pip install Pillow
+>>> pip install tqdm #only if not already installed
+>>> pip install scikit-learn
+>>> pip install matplotlib
+    
+>>> pip install torch==1.10.1
+>>> pip install transformers
+```
   </li>
   <li>
-    
-  </li>
-  <li>
-    
+    Finally, this is the list of script with respect of each experiment:
+    <ul>
+      <li>all_inputs.py for the experiment with all inputs. </li>
+      <li>char_inputs.py for the experiment who only considers main character descriptions and portraits as inputs.</li>
+      <li>img_inputs.py for the experiment who only considers main character portraits as inputs.</li>
+      <li>syn_inputs.py for the experiment who only considers anime synopsis as inputs.</li>
+    </ul>
   </li>
 </ol>
+
+The outputs to plot the learning curves are stored inside ```./YourFolder/Final Results/<EXPERIMENT NAME>/```. reporte_full.csv contains the metrics of the experiment (e.g. MSE and correlation coeficients), while train_val_loss.json contains the train-validation loss for each epoch of the experiment in the follow list format: ```list[i] == [train loss in epoch i, validation loss in epoch i]```. From this, it is possible to reconstruct the learning curves by running ```lcurves.ipynb``` (in our case, not available in the ubuntu server).
+
+
+IMPORTANT NOTE: When the ```.ipynb``` files share name with a ```.py``` files, they are the same script but in the Jupyter Notebook format to allow better readability. If you have access to a powerfull GPU supporting JNB, feel free to run the experiments from these files instead.
+
+
+### Hardware Specifications
+
+The experiments were performed with the follow hardware:
+<ul>
+    <li>Graphic card: NVIDIA Quadro RTX 6000/8000</li>
+    <li>Processor: Intel Xeon E3-1200</li>
+    <li>RAM: 62 gb</li>
+    <li>VRAM: 46 gb</li>
+</ul>
+
+
+### Software Specifications
+
+The employed software was the follow:
+<ul>
+    <li>CUDA  V10.1.243</li>
+    <li>OS: Ubuntu Server 20.04.3 LTS</li>
+    <li>Vim version 8.1</li>
+    <li>Python version: 3.9.5</li>
+</ul>
