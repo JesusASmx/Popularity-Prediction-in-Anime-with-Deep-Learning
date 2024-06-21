@@ -72,6 +72,7 @@ Inside ```anime_virtual_enviroment```, install the follow packages:
       <li>char_inputs.py for the experiment who only considers main character descriptions and portraits as inputs.</li>
       <li>img_inputs.py for the experiment who only considers main character portraits as inputs.</li>
       <li>syn_inputs.py for the experiment who only considers anime synopsis as inputs.</li>
+      <li>trad_inputs.py for the experiment with all inputs but using TF-IDF and PILtotensor vectorizations.</li>
     </ul>
   </li>
 </ol>
@@ -79,7 +80,7 @@ Inside ```anime_virtual_enviroment```, install the follow packages:
 The outputs to plot the learning curves are stored inside ```./YourFolder/Final Results/<EXPERIMENT NAME>/```. reporte_full.csv contains the metrics of the experiment (e.g. MSE and correlation coeficients), while train_val_loss.json contains the train-validation loss for each epoch of the experiment in the follow list format: ```list[i] == [train loss in epoch i, validation loss in epoch i]```. From this, it is possible to reconstruct the learning curves by running ```lcurves.ipynb``` (in our case, not available in the ubuntu server).
 
 
-IMPORTANT NOTE: When the ```.ipynb``` files share name with a ```.py``` files, they are the same script but in the Jupyter Notebook format to allow better readability. If you have access to a powerfull GPU supporting JNB, feel free to run the experiments from these files instead.
+IMPORTANT NOTE: When the ```.ipynb``` files share name with a ```.py``` files, they are the same script but in the Jupyter Notebook format. If you have access to a powerfull GPU supporting JNB, feel free to try running the experiments from these files instead.
 
 
 ### Hardware Specifications
