@@ -103,3 +103,7 @@ The employed software was the follow:
     <li>Vim version 8.1</li>
     <li>Python version: 3.9.5</li>
 </ul>
+
+### How to cite this material
+
+10.5281/zenodo.13824604
