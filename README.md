@@ -109,15 +109,21 @@ The employed software was the follow:
 Here is a list of relevant translations and explanations of the variables and comments employed across the code:
 
 *Ca_Naxca.py
--Line 11:
-Original (Spanish): #IDs es lista t.q. IDs[x] es el ID del sample con label y_test[x] y predicción y_pred[x]
-Translated: #IDs is a list such that IDs[x] is the ID of the sample with label y_test[x] and prediction y_pred[x]
+<ul>
+  <li>Line 11:</li>
+  Original (Spanish): #IDs es lista t.q. IDs[x] es el ID del sample con label y_test[x] y predicción y_pred[x]
+  
+  Translated: #IDs is a list such that IDs[x] is the ID of the sample with label y_test[x] and prediction y_pred[x]  
+</ul>
 
 *The rest of the code:
--"Personaje" means "character" in Spanish.
--"Retratos" means "portraits" in Spanish.
+<ul>
+  <li>"Personaje" means "character" in Spanish.</li>
+  <li>"Retratos" means "portraits" in Spanish.</li>
+</ul>
 
 ### How to cite this material
 
 For this repository only, you should employ this DOI: 10.5281/zenodo.13824604
+
 For this repository plus the dataset, you should employ this DOI: 10.5281/zenodo.13835115
